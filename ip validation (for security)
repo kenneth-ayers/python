@@ -1,0 +1,8 @@
+import socket
+hostname = socket.gethostname()
+ip_address = socket.gethostbyname(hostname)
+if ip_address == "192.168.0.11":
+    print(f"Hostname: {hostname}")
+    print(f"IP Address: {ip_address}")
+else:
+    print("no entry")
