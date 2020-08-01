@@ -1,0 +1,21 @@
+import socket
+hostname = socket.gethostname()
+ip_address = socket.gethostbyname(hostname)
+if ip_address == "192.168.0.11":
+    print(f"Hostname: {hostname}")
+    print(f"IP Address: {ip_address}")
+else:
+    print("no entry")
+count = 0
+while True:
+    userName = input("Username: ")
+    password = input("Password: ")
+    count += 1
+    if count == 3:
+        #boot false user
+        break #exit
+    else:
+        if userName == 'Kenneth' and password == 'FTP123':
+            print ("welcome user")
+        else:
+            print("incorrect")
